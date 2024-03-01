@@ -34,4 +34,15 @@ public int getMatricula(){
 public double getNota(){
     return nota;
 }
+
+public void setNome(String nome){
+    this.nome = nome;
+}
+public void setMatricula(int matricula){
+    this.matricula = matricula;
+}
+public void setNota(double nota){
+    this.nota = nota;
+}
+
 }
