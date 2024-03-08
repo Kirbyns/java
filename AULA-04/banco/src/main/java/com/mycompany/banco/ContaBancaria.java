@@ -36,7 +36,11 @@ public class ContaBancaria {
         saldo +=valor; // metodo para depositar valor
     }
     public void sacar (double valor){
-        saldo -=valor; //metodo para 
+        if(valor <=saldo){
+        saldo -=valor;} else{  //metodo para sacar se tiver dinheiro 
+            
+            System.out.println("Saldo insuficiente, operação cancelada");
+        }
     }
 }
 
